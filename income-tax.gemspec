@@ -9,4 +9,5 @@ Gem::Specification.new "income-tax", IncomeTax::VERSION do |s|
   s.license     = "MIT"
   s.files       = `git ls-files`.split("\n") - %w[.gitignore .travis.yml]
   s.required_ruby_version = '>= 2.1.0'
+  s.version = "0.3.3"
 end
