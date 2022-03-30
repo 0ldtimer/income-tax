@@ -4,9 +4,11 @@ module IncomeTax
       class Manitoba < Territory
         register "Manitoba", "MB"
 
-        level offset(33723), "10.8%"
-        level offset(39162), "12.75%"
-        remainder            "17.4%"
+        levels year: 2022 do
+          level offset(33723), "10.8%"
+          level offset(39162), "12.75%"
+          remainder            "17.4%"
+        end
       end
     end
   end

@@ -146,4 +146,47 @@ describe IncomeTax::Countries::Canada do
       its(:taxes)        { should be == "38702.1216683811839".to_d   }
     end
   end
+
+  describe "tax year 2021, taxes in Canada" do
+    let(:tax_year)  { 2021       }
+
+    describe "from gross income of 50000" do
+      let(:income)       { 50000                                     }
+      its(:gross_income) { should be == 50000                        }
+      its(:net_income)   { should be == 42446.1.to_d                 }
+      its(:taxes)        { should be == 7553.90.to_d                 }
+    end
+  end
+
+  describe "tax year 2022, taxes in Canada" do
+    let(:tax_year)  { 2022       }
+
+    describe "from gross income of 50197" do
+      let(:income)       { 50197                                     }
+      its(:rate)         { should be == Rational(3, 20)              }
+      its(:gross_income) { should be == 50197                        }
+      its(:net_income)   { should be == 42667.45.to_d                }
+      its(:taxes)        { should be == 7529.55.to_d                 }
+    end
+
+    describe "from gross income of 50197" do
+      let(:income)       { 55000                                     }
+      its(:gross_income) { should be == 55000                        }
+      its(:net_income)   { should be == 46485.835.to_d                }
+      its(:taxes)        { should be == 8514.165.to_d                 }
+    end
+  end
+
+  describe "tax year 2022, taxes in BC" do
+    let(:tax_year)  { 2022       }
+    let(:territory) { "BC" }
+
+    describe "from gross income of 55000" do
+      let(:income)       { 55000                                     }
+
+      its(:gross_income) { should be == 55000                        }
+      its(:net_income)   { should be == 43364.4926.to_d                     }
+      its(:taxes)        { should be == 11635.5074.to_d              }
+    end
+  end
 end

@@ -4,11 +4,13 @@ module IncomeTax
       class Ontario < Territory
         register "Ontario", "ON"
 
-        level offset(45142),  "5.05%"
-        level offset(45145),  "9.15%"
-        level offset(59713),  "11.16%"
-        level offset(70000),  "12.16%"
-        remainder             "13.16%"
+        levels year: 2022 do
+          level offset(45142),  "5.05%"
+          level offset(45145),  "9.15%"
+          level offset(59713),  "11.16%"
+          level offset(70000),  "12.16%"
+          remainder             "13.16%"
+        end
       end
     end
   end

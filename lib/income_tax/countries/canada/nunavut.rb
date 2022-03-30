@@ -4,10 +4,12 @@ module IncomeTax
       class Nunavut < Territory
         register "Nunavut", "NU"
 
-        level offset(46740), "4%"
-        level offset(46740), "7%"
-        level offset(58498), "9%"
-        remainder            "11.5%"
+        levels year: 2022 do
+          level offset(46740), "4%"
+          level offset(46740), "7%"
+          level offset(58498), "9%"
+          remainder            "11.5%"
+        end
       end
     end
   end
