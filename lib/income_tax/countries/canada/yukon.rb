@@ -4,10 +4,10 @@ module IncomeTax
       class Yukon < Territory
         register "Yukon", "YT"
 
-        level offset(45282),  "6.4%"
-        level offset(45281),  "9%"
-        level offset(49825),  "10.9%"
-        level offset(359612), "12.8%"
+        level offset(49020),  "6.4%"
+        level offset(49020),  "9%"
+        level offset(53938),  "10.9%"
+        level offset(348022), "12.8%"
         remainder             "15%"
       end
     end

@@ -4,9 +4,9 @@ module IncomeTax
       class NorthwestTerritories < Territory
         register "Northwest Territories", "NT"
 
-        level offset(41011), "5.9%"
-        level offset(41013), "8.6%"
-        level offset(51329), "12.2%"
+        level offset(44396), "5.9%"
+        level offset(44400), "8.6%"
+        level offset(55566), "12.2%"
         remainder            "14.05%"
       end
     end

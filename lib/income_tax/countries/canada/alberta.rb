@@ -4,10 +4,10 @@ module IncomeTax
       class Alberta < Territory
         register "Alberta", "AB"
 
-        level offset(125000), "10%"
-        level offset(25000),  "12%"
-        level offset(50000),  "13%"
-        level offset(100000), "14%"
+        level offset(131220), "10%"
+        level offset(26244),  "12%"
+        level offset(52488),  "13%"
+        level offset(104976), "14%"
         remainder             "15%"
       end
     end

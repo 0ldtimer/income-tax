@@ -16,6 +16,22 @@ module IncomeTax
           level offset(59612), "29%"
           remainder            "33%"
         end
+
+        levels year: 2021 do
+          level offset(49020), "15%"
+          level offset(49020), "20.5%"
+          level offset(49020), "26%"
+          level offset(64533), "29%"
+          remainder            "33%"
+        end
+
+        levels year: 2022 do
+          level offset(50197), "15%"
+          level offset(50195), "20.5%"
+          level offset(55233), "26%"
+          level offset(66083), "29%"
+          remainder            "33%"
+        end
       end
     end
   end
