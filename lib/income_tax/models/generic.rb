@@ -80,7 +80,9 @@ module IncomeTax
         super
       end
 
-      def initialize(income: 0, income_type: :gross, **options)
+      def initialize(options = {})
+        income      = options[:income]      || 0
+        income_type = options[:income_type] || :gross
         raise ArgumentError, "income can't be negative" if income < 0
         @income_type = income_type
         @options     = options.dup
