@@ -6,6 +6,8 @@ module IncomeTax
     extend self
 
     def generate(*args, **options)
+      options = args.last
+
       parse_args(args,   options)
       set_income(:net,   options)
       set_income(:gross, options)
