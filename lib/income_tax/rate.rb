@@ -144,15 +144,15 @@ module IncomeTax
 
     private :math, :cast
 
-    module BigDecimalExtension
-      def BigDecimal(input, *)
-        Rate === input ? input.to_d : super
-      end
+    #module BigDecimalExtension
+    #  def BigDecimal(input, *)
+    #    Rate === input ? input.to_d : super
+    #  end
 
-      private :BigDecimal
-      Object.prepend(self)
-    end
+    #  private :BigDecimal
+    #  Object.prepend(self)
+    #end
 
-    private_constant :BigDecimalExtension
+    #private_constant :BigDecimalExtension
   end
 end
