@@ -12,12 +12,15 @@ module IncomeTax
           remainder            "15.3%"
         end
 
-        levels year: 2022 do
-          level offset(38081), "8.7%"
-          level offset(38080), "14.5%"
-          level offset(59812), "15.8%"
-          level offset(54390), "17.3%"
-          remainder            "18.3%"
+        levels year: 2024 do
+          level offset(43198), "8.7%"
+          level offset(43097), "14.5%"
+          level offset(67849), "15.8%"
+          level offset(61699), "17.8%"
+          level offset(59927), "19.8%"
+          level offset(275869), "20.8%"
+          level offset(551739), "21.3%"
+          remainder            "21.8%"
         end
       end
     end

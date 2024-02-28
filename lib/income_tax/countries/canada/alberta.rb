@@ -11,6 +11,14 @@ module IncomeTax
           level offset(104976), "14%"
           remainder             "15%"
         end
+
+        levels year: 2024 do
+          level offset(148269), "10%"
+          level offset(29653),  "12%"
+          level offset(59308),  "13%"
+          level offset(118615), "14%"
+          remainder             "15%"
+        end
       end
     end
   end

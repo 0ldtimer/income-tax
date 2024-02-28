@@ -10,6 +10,13 @@ module IncomeTax
           level 19555, "24%"
           remainder     "25.75%"
         end
+
+        levels year: 2024 do
+          level 51780,  "14%"
+          level 51765,  "19%"
+          level 22455, "24%"
+          remainder     "25.75%"
+        end
       end
     end
   end
